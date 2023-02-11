@@ -9,7 +9,7 @@ const middleware=(req,res,next)=>{
     console.log('middleware')
     next();
 }
-const db="mongodb+srv://mahi1218:wj6zw24v4r@cluster0.ye73bni.mongodb.net/?retryWrites=true&w=majority";
+
 mongoose.connect(db,{
     useNewUrlParser: true
 }).then(()=>{
